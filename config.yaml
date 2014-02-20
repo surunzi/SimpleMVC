@@ -1,0 +1,12 @@
+handle:
+- rewrite: if( !is_file() && !is_dir() && path ~ "(.*)") goto "index.php?url=$1&&%{QUERY_STRING}"
+
+- compress:  if ( path ~ "text/javascript" ) compress
+- compress:  if ( path ~ "text/css" ) compress
+
+- expire:  if( path ~ ".js" ) time 864000
+- expire:  if( path ~ ".css" ) time 864000
+- expire:  if( path ~ ".jpg" ) time 864000
+- expire:  if( path ~ ".png" ) time 864000
+- expire:  if( path ~ ".gif" ) time 864000
+- expire:  if( path ~ ".ico" ) time 864000

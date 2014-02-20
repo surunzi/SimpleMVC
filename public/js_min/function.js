@@ -1,0 +1,1 @@
+function pageSelectHandle(a,b){window.location=a+b.value};

@@ -1,0 +1,41 @@
+/*这里是所有通用CSS样式定义的地方*/
+* {
+	font-family: 微软雅黑;
+}
+
+body {
+	padding-top: 70px;
+	background-image: url(../img/bg.png);
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.callout {
+	background-color: #f0f7fd;
+	border-left: 5px solid #eee;
+	padding: 15px 30px 15px 15px;
+}
+
+.code {
+	color: #c7254e;
+	background-color: #f9f2f4;
+	border-radius: 4px;
+	padding: 2px 4px;
+	word-break: break-all;
+}
+
+.fixed{
+	position: fixed;
+}
+
+.jumbotron {
+	margin-top: -30px;
+}
+
+.pagination select {
+	display: inline;
+}
